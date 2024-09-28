@@ -5,6 +5,11 @@ export const StyledNavItem = styled.li`
   display: flex;
   flex-direction: column;
   color: ${theme.primary.veryDarkBlue};
+
+  p:hover {
+    color: black;
+    font-weight: 600;
+  }
   div {
     color: inherit;
     display: flex;
@@ -27,10 +32,14 @@ export const StyledNavItem = styled.li`
     row-gap: 24px;
     padding: 24px 0px;
     margin: 24px 0px 0px;
+    li:hover {
+      color: black;
+      font-weight: 600;
+    }
   }
 `;
 
 export const Arrow = styled.img`
   transition: transform 0.3s ease;
-  transform: ${(props) => (props.$isOpen ? "rotate(180deg)" : "rotate(0deg)")};
+  transform: ${(props) => (props.isOpen ? "rotate(180deg)" : "rotate(0deg)")};
 `;

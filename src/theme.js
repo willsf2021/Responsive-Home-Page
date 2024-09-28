@@ -9,7 +9,7 @@ export const theme = {
     grayishBlue: "hsl(240, 2%, 79%)",
     grayishBlueMobileMenu: "hsla(240, 3%, 79%, 0.4)",
     veryDarkGrayishBlue: "hsl(207, 13%, 34%)",
-    veryDarkBlackBlue: "hsl(240, ,10%, 16%)",
+    veryDarkBlackBlue: "hsl(240, 10%, 16%)",
   },
   gradient: {
     veryLightRed: "hsl(13, 100%, 72%)",
@@ -17,7 +17,7 @@ export const theme = {
   },
 
   gradientBody: {
-    veryDarkBrayBlue: "hsl(237, 17%, 21%)",
+    veryDarkGrayBlue: "hsl(237, 17%, 21%)",
     veryDarkDesaturatedBlue: "hsl(237, 23%, 32%)",
   },
 };

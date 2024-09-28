@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { StyledMobileMenu, Ul } from "./MobileMenu.styled";
 import NavItem from "./NavItem/NavItem";
+import { Arrays } from "../../../App";
 
 function MobileMenu() {
   const [showSubItems, setShowsubItems] = useState(null);
@@ -9,6 +10,7 @@ function MobileMenu() {
     setShowsubItems(showSubItems === itemName ? null : itemName);
   };
 
+  
   return (
     <StyledMobileMenu>
       <nav>
@@ -17,25 +19,25 @@ function MobileMenu() {
             nameItem="Products"
             onClick={handleItemClick}
             isOpen={showSubItems === "Products"}
-            subItems={["...", "...", "..."]}
+            subItems={Arrays.products}
           />
           <NavItem
             nameItem="Company"
             onClick={handleItemClick}
             isOpen={showSubItems === "Company"}
-            subItems={["...", "...", "..."]}
+            subItems={Arrays.company}
           />
           <NavItem
             nameItem="Connect"
             onClick={handleItemClick}
             isOpen={showSubItems === "Connect"}
-            subItems={["Contact", "Newsletter", "LinkedIn"]}
+            subItems={Arrays.connect}
           />
         </Ul>
         <hr />
-        <div>
+        <div className="button">
           <button>Login</button>
-          <button>Sign Up</button>
+          <button className="mobileButton">Sign Up</button>
         </div>
       </nav>
     </StyledMobileMenu>

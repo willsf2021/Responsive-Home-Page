@@ -6,7 +6,7 @@ function NavItem({ nameItem, subItems, onClick, isOpen }) {
   return (
     <StyledNavItem onClick={() => onClick(nameItem)}>
       <div>
-        {nameItem}
+        <p>{nameItem}</p>
         <Arrow src={arrowDown} alt="" isOpen={isOpen} />
       </div>
       {isOpen && subItems && subItems.length > 0 && (
