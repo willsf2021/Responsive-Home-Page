@@ -44,12 +44,14 @@ Error generating stack: `+o.message+`
       padding: 0;
       box-sizing: border-box;
     }
-    
+    html {
+      overflow-x: hidden;          
+    }
     body {
-      max-width: 375px;
-      margin: auto;
-      overflow-x: hidden;
-     
+      height: 100vh;
+      max-width: 768px;    
+      overflow-x: hidden;     
+      margin: auto; 
     }
 `,q={primary:{lightRed:"hsl(356, 100%, 66%)",veryLightRed:"hsl(355, 100%, 74%)",veryDarkBlue:"hsl(208, 49%, 24%)"},neutral:{grayishBlue:"hsl(240, 2%, 79%)",grayishBlueMobileMenu:"hsla(240, 3%, 79%, 0.4)",veryDarkGrayishBlue:"hsl(207, 13%, 34%)",veryDarkBlackBlue:"hsl(240, 10%, 16%)"},gradient:{veryLightRed:"hsl(13, 100%, 72%)",lightRed:"hsl(353, 100%, 62%)"},gradientBody:{veryDarkGrayBlue:"hsl(237, 17%, 21%)",veryDarkDesaturatedBlue:"hsl(237, 23%, 32%)"}},B1=te.header`
   position: relative;
@@ -137,12 +139,15 @@ Error generating stack: `+o.message+`
 `;te.section``;const W1=te.div`
   position: absolute;
   left: 16px;
+  right: 16px;
   top: 112px;
   width: 327px;
   background-color: white;
   padding: 32px 24px;
   border-radius: 5px;
   box-shadow: 0px 3px 16px 1px rgb(0, 0, 0, 0.3);
+  margin: auto;
+  z-index:999;
 
   hr {
     opacity: 30%;
@@ -155,6 +160,7 @@ Error generating stack: `+o.message+`
     flex-direction: column;
     justify-content: center;
     row-gap: 12px;
+    
 
     button {
       padding: 14px 0px;
