@@ -4,12 +4,15 @@ import { theme } from "../../../theme";
 export const StyledMobileMenu = styled.div`
   position: absolute;
   left: 16px;
+  right: 16px;
   top: 112px;
   width: 327px;
   background-color: white;
   padding: 32px 24px;
   border-radius: 5px;
   box-shadow: 0px 3px 16px 1px rgb(0, 0, 0, 0.3);
+  margin: auto;
+  z-index:999;
 
   hr {
     opacity: 30%;
@@ -22,6 +25,7 @@ export const StyledMobileMenu = styled.div`
     flex-direction: column;
     justify-content: center;
     row-gap: 12px;
+    
 
     button {
       padding: 14px 0px;
