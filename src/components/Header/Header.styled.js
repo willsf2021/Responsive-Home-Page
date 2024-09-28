@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import backgroundImage from "../../assets/images/bg-pattern-intro-mobile.svg";
 import { theme } from "../../theme";
 
 export const StyledHeader = styled.header`
   position: relative;
-  background: url("../../assets/images/bg-pattern-intro-mobile.svg");
   background-position: bottom -480px left -340px;
   background-repeat: no-repeat;
   &::before {

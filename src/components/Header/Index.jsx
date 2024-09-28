@@ -4,6 +4,7 @@ import MobileMenu from "./MobileMenu/MobileMenu";
 import logo from "../../assets/images/logo.svg";
 import iconOpen from "../../assets/images/icon-hamburger.svg";
 import iconClose from "../../assets/images/icon-close.svg";
+import backgroundImage from "../../assets/images/bg-pattern-intro-mobile.svg";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,11 @@ function Header() {
   };
 
   return (
-    <StyledHeader>
+    <StyledHeader
+      style={{
+        backgroundImage: `url(${backgroundImage})`
+      }}
+    >
       <NavBar>
         <img src={logo} alt="Logo Blogr" />
         <img

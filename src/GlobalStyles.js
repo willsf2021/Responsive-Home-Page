@@ -6,10 +6,12 @@ const GlobalStyles = createGlobalStyle`
       padding: 0;
       box-sizing: border-box;
     }
-
+    
     body {
       max-width: 375px;
       margin: auto;
+      overflow-x: hidden;
+     
     }
 `;
 

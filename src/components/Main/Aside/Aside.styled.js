@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import { theme } from "../../../theme";
-import backgroundImage from "../../../assets/images/bg-pattern-circles.svg"
-
 
 export const StyledAside = styled.aside`
- position: relative;
-  background: url(${backgroundImage});
+  position: relative;
   background-position: right 50% top -216px;
   background-size: 572px;
   background-repeat: no-repeat;
@@ -19,14 +16,14 @@ export const StyledAside = styled.aside`
   border-radius: 0px 96px 0px 96px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(
-      to bottom, 
+      to bottom,
       ${theme.gradientBody.veryDarkGrayBlue},
       ${theme.gradientBody.veryDarkDesaturatedBlue}
     );
@@ -35,21 +32,21 @@ export const StyledAside = styled.aside`
   }
 
   img.aside {
-    width:368px;
+    width: 368px;
     top: -184px;
-    position: absolute;    
-}
+    position: absolute;
+  }
   h1 {
-    text-align:center;
-    font-weight:500;
+    text-align: center;
+    font-weight: 500;
     font-size: 36px;
     color: white;
-}
-p {
-    text-align:center;
+  }
+  p {
+    text-align: center;
     font-size: 16px;
     color: white;
     line-height: 1.6rem;
-    font-weight:300;
-}
-`
+    font-weight: 300;
+  }
+`;

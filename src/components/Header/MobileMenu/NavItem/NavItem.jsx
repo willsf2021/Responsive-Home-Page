@@ -4,7 +4,7 @@ import arrowDown from "../../../../assets/images/icon-arrow-dark.svg";
 
 function NavItem({ nameItem, subItems, onClick, isOpen }) {
   return (
-    <StyledNavItem onClick={() => onClick(nameItem)}>
+    <StyledNavItem onClick={() => onClick(nameItem)} isOpen={isOpen}>
       <div>
         <p>{nameItem}</p>
         <Arrow src={arrowDown} alt="" isOpen={isOpen} />

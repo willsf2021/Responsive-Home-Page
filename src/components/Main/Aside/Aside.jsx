@@ -1,10 +1,15 @@
 import React from "react";
 import { StyledAside } from "./Aside.styled";
 import phonesPicture from "../../../assets/images/illustration-phones.svg";
+import backgroundImageAside from "../../../assets/images/bg-pattern-circles.svg";
 
 function Aside() {
   return (
-    <StyledAside>
+    <StyledAside
+      style={{
+        backgroundImage: `url(${backgroundImageAside})`,
+      }}
+    >
       <img className="aside" src={phonesPicture} alt="" />
       <h1>State of the Art Infrastructure</h1>
       <p>
