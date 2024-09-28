@@ -4,18 +4,18 @@ import { theme } from "../../theme";
 
 export const StyledHeader = styled.header`
   position: relative;
-  background: url(${backgroundImage});
-  background-position: bottom -480px left -340px; 
+  background: url("../../assets/images/bg-pattern-intro-mobile.svg");
+  background-position: bottom -480px left -340px;
   background-repeat: no-repeat;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(
-      to bottom, 
+      to bottom,
       ${theme.gradient.veryLightRed},
       ${theme.gradient.lightRed}
     );
@@ -70,7 +70,7 @@ export const Buttons = styled.div`
     border-radius: 32px;
     border: 1px solid white;
     cursor: pointer;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
   }
 
   button:nth-child(1) {
