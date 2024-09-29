@@ -15,6 +15,12 @@ const GlobalStyles = createGlobalStyle`
       overflow-x: hidden;     
       margin: auto; 
     }
+
+    @media (min-width: 768px) {
+      body {
+        max-width:1440px
+      }
+    }
 `;
 
 export default GlobalStyles;

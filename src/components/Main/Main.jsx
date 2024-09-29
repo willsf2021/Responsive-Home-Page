@@ -3,13 +3,32 @@ import { StyledMain } from "./Main.styled.js";
 import Section from "./Section/Section.jsx";
 import Aside from "./Aside/Aside.jsx";
 import editorMobile from "../../assets/images/illustration-editor-mobile.svg";
-import lapTopMobile from "../../assets/images/illustration-laptop-mobile.svg";
+import editorDesktop from "../../assets/images/illustration-editor-desktop.svg";
+import laptopMobile from "../../assets/images/illustration-laptop-mobile.svg";
+import laptopDesktop from "../../assets/images/illustration-laptop-desktop.svg";
+import React, { useState, useEffect } from "react";
 
 function Main() {
+  const [windowSize, setWindowSize] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setWindowSize(false);
+      } else {
+        setWindowSize(true);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <StyledMain>
       <Section
-        srcImg={editorMobile}
+        orientationImg="row-reverse"
+        srcImg={windowSize ? editorDesktop : editorMobile}
         altImg={"Editor Picture Mobile"}
         title="Designed for the future"
         colorTitle={theme.primary.veryDarkBlue}
@@ -30,7 +49,8 @@ function Main() {
       />
 
       <Section
-        srcImg={lapTopMobile}
+        srcImg={windowSize ? laptopDesktop : laptopMobile}
+        orientationImg="row"
         altImg={"Laptop Picture Mobile"}
         subTitle={["Free, open, simple", "Powerful tooling"]}
         paragraph={[

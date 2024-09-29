@@ -4,6 +4,7 @@ import { theme } from "../../theme";
 export const StyledHeader = styled.header`
   position: relative;
   background-position: bottom -480px left -340px;
+  
   background-repeat: no-repeat;
   &::before {
     content: "";
@@ -89,4 +90,3 @@ export const Buttons = styled.div`
     color: ${theme.primary.veryLightRed};
   }
 `;
-export const Mask1 = styled.section``;

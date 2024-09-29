@@ -6,6 +6,8 @@ export const StyledMain = styled.main`
   flex-direction: column;
   padding: 0px;
   .special {
-    font: 600 32px "Overpass", sans-serif
+    font: 600 32px "Overpass", sans-serif;
   }
+
+  
 `;

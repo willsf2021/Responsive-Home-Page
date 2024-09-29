@@ -7,7 +7,7 @@ import Item from "./Item/Item";
 function Footer() {
   return (
     <StyledFooter>
-      <img src={logo} alt="" />
+      <div><img src={logo} alt="" /></div>
       <Item item={"Product"} subItem={Arrays.products}/>
       <Item item={"Company"} subItem={Arrays.company}/>
       <Item item={"Connect"} subItem={Arrays.connect}/> 
