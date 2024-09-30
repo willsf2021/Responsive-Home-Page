@@ -4,7 +4,7 @@ import { theme } from "../../theme";
 export const StyledHeader = styled.header`
   position: relative;
   background-position: bottom -480px left -340px;
-  
+
   background-repeat: no-repeat;
   &::before {
     content: "";
@@ -27,15 +27,23 @@ export const StyledHeader = styled.header`
   padding: 48px 24px 160px;
   font-family: "Overpass", sans-serif;
   border-radius: 0px 0px 0px 96px;
-`;
+  @media (min-width: 768px) {
+    padding: 48px 160px 160px;
+  }
+  `;
 
 export const NavBar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   img:nth-child(1) {
     width: 80px;
+  }
+  @media (min-width: 768px) {
+    img:nth-child(1) {
+      width: 104px;
+    }
   }
 `;
 export const Presentation = styled.section`
@@ -47,6 +55,9 @@ export const Presentation = styled.section`
     font-weight: 500;
     color: white;
     margin-bottom: 16px;
+    @media (min-width: 768px) {
+      font-size: 64px;
+    }
   }
 
   p {
